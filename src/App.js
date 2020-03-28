@@ -1,13 +1,12 @@
 import React from "react";
-import "./App.css";
+
 import ShopList from "./containers/ShopList";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <ShopList />
-      </header>
+      <header className="App-header"></header>
+      <ShopList />
     </div>
   );
 }
