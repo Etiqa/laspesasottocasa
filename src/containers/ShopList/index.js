@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import useSWR from "swr";
+
+import Shop from "../../components/shop";
 
 const Div = styled.div`
   background-color: #282c34;
@@ -12,6 +15,18 @@ const Div = styled.div`
   color: white;
 `;
 
+const fetcher = (url) => fetch(url).then((r) => r.json());
+
 export default () => {
-  return <Div>Shops</Div>;
+  const { data, error } = useSWR("http://localhost:5000/shops.json", fetcher);
+
+  if (error) return <Div>failed to load</Div>;
+  if (!data) return <Div>loading...</Div>;
+  return (
+    <Div>
+      {data.shops.map((s) => (
+        <Shop data={s} />
+      ))}
+    </Div>
+  );
 };
