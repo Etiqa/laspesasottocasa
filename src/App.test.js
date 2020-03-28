@@ -1,9 +1,13 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { cleanup, fireEvent, render } from "@testing-library/react";
 import App from "./App";
 
-test("renders learn react link", () => {
+// Note: running cleanup afterEach is done automatically for you in @testing-library/react@9.0.0 or higher
+// unmount and cleanup DOM after the test is finished.
+afterEach(cleanup);
+
+it("CheckboxWithLabel changes the text after click", () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+  expect(getByText(/Shops/i)).toBeTruthy();
 });
