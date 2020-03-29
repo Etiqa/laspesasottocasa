@@ -108,7 +108,7 @@
       }
       $( document ).ready(function () {
         let db;
-        $.getJSON("data/torino.json").then(function (data) {
+        $.getJSON("/data/torino.json").then(function (data) {
           db = data;
           const comuni = data.map(row=>row.comune).sort();
           comuni.forEach(comune=>$('#comune').append('<option value="'+comune+'">'+comune+'</option>'));
