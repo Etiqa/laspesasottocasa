@@ -3,7 +3,8 @@
     {
       "name": "foo",
       "address": "foo street",
-      "type": "grocery"
+      "type": "grocery",
+      "phone": "123456"
     },
     {
       "name": "bar",
