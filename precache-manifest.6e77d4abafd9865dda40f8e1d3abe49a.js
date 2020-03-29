@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ef0fb878b12b54b6788913213b616bcc",
+    "revision": "41ce01178f803f0e811711db10c01cf5",
     "url": "/laspesasottocasa/index.html"
   },
   {
-    "revision": "23b168600e8244d0d3ce",
+    "revision": "7125474c30b82878817b",
     "url": "/laspesasottocasa/static/css/main.34de6062.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/laspesasottocasa/static/js/2.b68468e6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "23b168600e8244d0d3ce",
-    "url": "/laspesasottocasa/static/js/main.ff28eb17.chunk.js"
+    "revision": "7125474c30b82878817b",
+    "url": "/laspesasottocasa/static/js/main.46ae9a1c.chunk.js"
   },
   {
     "revision": "34890265502a323e913b",
