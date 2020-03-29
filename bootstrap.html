@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1 class="card-title">La spesa sottocasa</h1>
+
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-sm">
+        <select class="custom-select" id="provincia">
+          <option value="torino">Torino</option>
+        </select>
+        </div>
+        <div class="col-sm">
+        <select class="custom-select" id="comune">
+        </select>
+        </div>
+        <div class="col-sm">
+        <button type="button" class="btn btn-primary" id="search">Trova</button>
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <table class="table" id="shops">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Negozio</th>
+              <th scope="col">Indirizzo</th>
+              <th scope="col">Prodotto</th>
+              <th scope="col">Telefono</th>              
+              <th scope="col">Email</th>
+              <th scope="col">Sito</th>
+              <th scope="col">Consegna</th>
+            </tr>
+          </thead>
+          <tbody>
+
+        </table>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+      function format_phones(phones) {
+          if (phones && phones.length > 0) {
+            return phones.map(phone=>"<a href=tel:" + phone + ">" + phone + "</a>").join("<br>");
+          } else {
+            return phones || "";
+          }
+      }
+
+      function format_merce(merce) {
+          if (merce && merce.length > 1) {
+            return merce.join(",");
+          } else {
+            return merce || "";
+          }
+      }     
+
+      function format_sites(sites) {
+          if (sites && sites.length > 0) {
+            return sites
+              .map(site=>({"label":site.split("?")[0],"href":site}))
+              .map(site=>"<a href='" + site.href + "'>" + site.label + "</a></li>")
+              .join("<br>");
+          } else {
+            return sites || "";
+          }
+      }  
+
+      function format_email(email) {
+        if (email) {
+            return "<a href='mailto:"+email+"'>"+email+"</a>";
+        } else {
+          return "";
+        }
+      }   
+
+      function shop_tohtml(s) {
+        let start = "<tr><td scope='col'>";
+        let sep = "</td><td scope='col'>";
+        let end = "</td></tr>";
+
+        return start 
+            + s.name + sep 
+            + s.address + sep
+            + format_merce(s.merce) + sep
+            + format_phones(s.phones) + sep
+            + format_email(s.email) + sep
+            + format_sites(s.urls) + sep
+            + s.consegna
+            + end;
+
+      }
+      $( document ).ready(function () {
+        let db;
+        $.getJSON("data/torino.json").then(function (data) {
+          db = data;
+          const comuni = data.map(row=>row.comune).sort();
+          comuni.forEach(comune=>$('#comune').append('<option value="'+comune+'">'+comune+'</option>'));
+        });
+
+        $("#search").on("click", function () {
+          let comune = $("#comune").find("option:selected").text();
+          let shops = db.find(element=>element.comune == comune).shops || [];
+          let html = shops.map(shop=>shop_tohtml(shop)).join("");
+          $("#shops tbody").html(html);
+          console.log(shops.length)
+        })
+      });
+    </script>
+  </body>
+</html>
