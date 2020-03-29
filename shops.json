@@ -1,0 +1,14 @@
+{
+    "shops": [
+      {
+        "name": "foo",
+        "address": "foo street",
+        "type": "grocery"
+      },
+      {
+        "name": "bar",
+        "address": "bar street",
+        "type": "wine"
+      }
+    ]
+  }
