@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export default ({ data }) => {
   return (
-    <div key={data.name}>
+    <div>
       Shop {data.name} in {data.address}
     </div>
   );

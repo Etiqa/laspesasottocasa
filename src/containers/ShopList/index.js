@@ -25,7 +25,7 @@ export default () => {
   return (
     <Div>
       {data.shops.map((s) => (
-        <Shop data={s} />
+        <Shop key={s.name} data={s} />
       ))}
     </Div>
   );
