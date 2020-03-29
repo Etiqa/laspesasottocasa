@@ -18,7 +18,7 @@ const Div = styled.div`
 const fetcher = (url) => fetch(url).then((r) => r.json());
 
 export default () => {
-  const { data, error } = useSWR("http://localhost:5000/shops.json", fetcher);
+  const { data, error } = useSWR("/data/shops.json", fetcher);
 
   if (error) return <Div>failed to load</Div>;
   if (!data) return <Div>loading...</Div>;
