@@ -24,8 +24,8 @@ export default () => {
   if (!data) return <Div>loading...</Div>;
   return (
     <Div>
-      {data.shops.map((s) => (
-        <Shop key={s.name} data={s} />
+      {data.shops.map((shop) => (
+        <Shop key={shop.name} shop={shop} />
       ))}
     </Div>
   );

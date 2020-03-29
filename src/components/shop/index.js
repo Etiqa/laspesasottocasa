@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-export default ({ data }) => {
+export default ({ shop }) => {
   return (
     <div>
-      Shop {data.name} in {data.address}
+      Shop {shop.name} in {shop.address}. Phone: {shop.phone}
     </div>
   );
 };
