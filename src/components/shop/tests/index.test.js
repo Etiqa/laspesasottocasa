@@ -25,6 +25,6 @@ describe("Shop data is shows", () => {
 
     expect(queryByText(/foo/i)).toBeTruthy();
     expect(queryByText(/foo street/i)).toBeTruthy();
-    expect(queryByText(/123456/i)).toBe(null);
+    expect(queryByText(/Phone: N\/A/i)).toBeTruthy();
   });
 });
