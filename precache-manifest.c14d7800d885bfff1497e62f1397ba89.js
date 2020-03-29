@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3de84389bcc1c744e8743e27d0e8ca84",
+    "revision": "53abdcfd3d56d4f45c421d9d3b4ee4bd",
     "url": "/laspesasottocasa/index.html"
   },
   {
-    "revision": "950fdf7428d7a178c563",
+    "revision": "809592b4bcaa847e0cdc",
     "url": "/laspesasottocasa/static/css/main.34de6062.chunk.css"
   },
   {
-    "revision": "27d06d511c2e0284a9a2",
-    "url": "/laspesasottocasa/static/js/2.b68468e6.chunk.js"
+    "revision": "2301ac7a95ce14f85148",
+    "url": "/laspesasottocasa/static/js/2.bd16f601.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/laspesasottocasa/static/js/2.b68468e6.chunk.js.LICENSE.txt"
+    "url": "/laspesasottocasa/static/js/2.bd16f601.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "950fdf7428d7a178c563",
-    "url": "/laspesasottocasa/static/js/main.8c1858c8.chunk.js"
+    "revision": "809592b4bcaa847e0cdc",
+    "url": "/laspesasottocasa/static/js/main.1988393a.chunk.js"
   },
   {
     "revision": "34890265502a323e913b",

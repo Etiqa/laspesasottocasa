@@ -1,15 +1,24 @@
 {
   "shops": [
     {
-      "name": "foo",
-      "address": "foo street",
+      "name": "Verdure e sapori",
+      "address": "Via Madama Cristina ",
       "type": "grocery",
-      "phone": "123456"
+      "phones": ["123456"]
     },
     {
       "name": "bar",
       "address": "bar street",
       "type": "wine"
+    },
+    {
+      "name": "foo",
+      "email": "info@domain.it",
+      "urls": ["www.domain.it"],
+      "phones": ["1234567"],
+      "address": "main street",
+      "merce": ["ENOTECA"],
+      "consegna": ""
     }
   ]
 }
