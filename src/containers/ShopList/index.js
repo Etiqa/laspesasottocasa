@@ -9,24 +9,23 @@ const Div = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: grey;
+  padding: 10px;
 `;
 
 const fetcher = (url) => fetch(url).then((r) => r.json());
 
 export default () => {
-  const { data, error } = useSWR("data/shops.json", fetcher);
+  const { data, error } = useSWR("data/torino.json", fetcher);
 
   if (error) return <Div>failed to load</Div>;
   if (!data) return <Div>loading...</Div>;
   return (
     <Div>
-      {data.shops.map((shop) => (
-        <Shop key={shop.name} shop={shop} />
-      ))}
+      {data.map((city) =>
+        city.shops.map((shop) => <Shop key={shop.name} shop={shop} />)
+      )}
     </Div>
   );
 };
