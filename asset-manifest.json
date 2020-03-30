@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/laspesasottocasa/static/css/main.34de6062.chunk.css",
-    "main.js": "/laspesasottocasa/static/js/main.af5323b5.chunk.js",
-    "main.js.map": "/laspesasottocasa/static/js/main.af5323b5.chunk.js.map",
+    "main.js": "/laspesasottocasa/static/js/main.38522245.chunk.js",
+    "main.js.map": "/laspesasottocasa/static/js/main.38522245.chunk.js.map",
     "runtime-main.js": "/laspesasottocasa/static/js/runtime-main.b9b25f0c.js",
     "runtime-main.js.map": "/laspesasottocasa/static/js/runtime-main.b9b25f0c.js.map",
-    "static/js/2.939455a1.chunk.js": "/laspesasottocasa/static/js/2.939455a1.chunk.js",
-    "static/js/2.939455a1.chunk.js.map": "/laspesasottocasa/static/js/2.939455a1.chunk.js.map",
+    "static/js/2.e1c3f67f.chunk.js": "/laspesasottocasa/static/js/2.e1c3f67f.chunk.js",
+    "static/js/2.e1c3f67f.chunk.js.map": "/laspesasottocasa/static/js/2.e1c3f67f.chunk.js.map",
     "index.html": "/laspesasottocasa/index.html",
-    "precache-manifest.919fb583f63dea091d3d833a997a4c04.js": "/laspesasottocasa/precache-manifest.919fb583f63dea091d3d833a997a4c04.js",
+    "precache-manifest.f98c4e0f565ddfba53eaec6bca82fd33.js": "/laspesasottocasa/precache-manifest.f98c4e0f565ddfba53eaec6bca82fd33.js",
     "service-worker.js": "/laspesasottocasa/service-worker.js",
     "static/css/main.34de6062.chunk.css.map": "/laspesasottocasa/static/css/main.34de6062.chunk.css.map",
-    "static/js/2.939455a1.chunk.js.LICENSE.txt": "/laspesasottocasa/static/js/2.939455a1.chunk.js.LICENSE.txt"
+    "static/js/2.e1c3f67f.chunk.js.LICENSE.txt": "/laspesasottocasa/static/js/2.e1c3f67f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b9b25f0c.js",
-    "static/js/2.939455a1.chunk.js",
+    "static/js/2.e1c3f67f.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.af5323b5.chunk.js"
+    "static/js/main.38522245.chunk.js"
   ]
 }
