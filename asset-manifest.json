@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/laspesasottocasa/static/css/main.34de6062.chunk.css",
-    "main.js": "/laspesasottocasa/static/js/main.0ec8941b.chunk.js",
-    "main.js.map": "/laspesasottocasa/static/js/main.0ec8941b.chunk.js.map",
+    "main.js": "/laspesasottocasa/static/js/main.af5323b5.chunk.js",
+    "main.js.map": "/laspesasottocasa/static/js/main.af5323b5.chunk.js.map",
     "runtime-main.js": "/laspesasottocasa/static/js/runtime-main.b9b25f0c.js",
     "runtime-main.js.map": "/laspesasottocasa/static/js/runtime-main.b9b25f0c.js.map",
     "static/js/2.939455a1.chunk.js": "/laspesasottocasa/static/js/2.939455a1.chunk.js",
     "static/js/2.939455a1.chunk.js.map": "/laspesasottocasa/static/js/2.939455a1.chunk.js.map",
     "index.html": "/laspesasottocasa/index.html",
-    "precache-manifest.ff5b855bdcd52a0a9000c89b408e6569.js": "/laspesasottocasa/precache-manifest.ff5b855bdcd52a0a9000c89b408e6569.js",
+    "precache-manifest.919fb583f63dea091d3d833a997a4c04.js": "/laspesasottocasa/precache-manifest.919fb583f63dea091d3d833a997a4c04.js",
     "service-worker.js": "/laspesasottocasa/service-worker.js",
     "static/css/main.34de6062.chunk.css.map": "/laspesasottocasa/static/css/main.34de6062.chunk.css.map",
     "static/js/2.939455a1.chunk.js.LICENSE.txt": "/laspesasottocasa/static/js/2.939455a1.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.b9b25f0c.js",
     "static/js/2.939455a1.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.0ec8941b.chunk.js"
+    "static/js/main.af5323b5.chunk.js"
   ]
 }
