@@ -4,20 +4,12 @@ import useSWR from "swr";
 
 import Shop from "../../components/shop";
 
-const Div = styled.div`
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  color: grey;
-  padding: 10px;
-`;
+const Div = styled.div``;
 
 const fetcher = (url) => fetch(url).then((r) => r.json());
 
 export default () => {
-  const { data, error } = useSWR("data/torino.json", fetcher);
+  const { data, error } = useSWR("laspesasottocasa/data/torino.json", fetcher);
 
   if (error) return <Div>failed to load</Div>;
   if (!data) return <Div>loading...</Div>;

@@ -1,28 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import { A } from "@bootstrap-styled/v4";
 
 const Name = styled.div`
   font-weight: 700;
-  color: white;
-`;
-
-const Address = styled.div``;
-
-const Phone = styled.div`
-  color: grey;
-`;
-
-const Email = styled.div``;
-
-const Type = styled.div``;
-
-const Hr = styled.hr`
-  color: white;
-`;
-
-const A = styled.a`
-  color: white;
-  text-decoration: none;
 `;
 
 export default ({ shop }) => {
@@ -31,11 +12,11 @@ export default ({ shop }) => {
       <Name>
         {shop.urls ? <A href={shop.urls[0]}>{shop.name}</A> : shop.name}
       </Name>
-      <Address>{shop.address}</Address>
-      <Email>{shop.email}</Email>
-      <Phone>{shop.phones ? shop.phones.join(", ") : ""}</Phone>
-      <Type>{shop.merce ? shop.merce.join(", ") : ""}</Type>
-      <Hr />
+      <div>{shop.address}</div>
+      <div>{shop.email}</div>
+      <div>{shop.phones ? shop.phones.join(", ") : ""}</div>
+      <div>{shop.merce ? shop.merce.join(", ") : ""}</div>
+      <hr />
     </div>
   );
 };
