@@ -46,7 +46,7 @@ const resp = {
 };
 
 beforeEach(() => {
-  useState.mockImplementation((init) => [init, setState]);
+  useState.mockImplementation((init) => ["TUTTI", setState]);
   useSWR.mockReturnValue(resp);
 });
 

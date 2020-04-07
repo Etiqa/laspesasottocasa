@@ -14,21 +14,25 @@ export default () => {
     process.env.PUBLIC_URL + "/data/torino.json",
     fetcher
   );
-  const [cityFilter, setCityFilter] = useState();
+  const [cityFilter, setCityFilter] = useState("TUTTI");
 
   if (error) return <Div>failed to load</Div>;
   if (!data) return <Div>loading...</Div>;
 
   return (
     <div>
-      filtering {cityFilter}
       <CityFilter
-        data={data}
+        data={[
+          {
+            comune: "TUTTI",
+          },
+          ...data,
+        ]}
         cityFilter={cityFilter}
         setCityFilter={setCityFilter}
       />
       {data
-        .filter((city) => !cityFilter || city.comune === cityFilter)
+        .filter((city) => cityFilter === "TUTTI" || city.comune === cityFilter)
         .map((city) =>
           city.shops.map((shop) => (
             <Shop key={`${shop.name}-${Math.random()}`} shop={shop} />

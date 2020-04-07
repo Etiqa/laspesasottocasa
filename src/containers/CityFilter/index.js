@@ -7,7 +7,6 @@ export default ({ data, cityFilter, setCityFilter }) => {
   };
 
   const handleSelectChange = (event) => {
-    console.log("ev", event.target.value);
     setCityFilter(event.target.value);
   };
 
@@ -17,8 +16,11 @@ export default ({ data, cityFilter, setCityFilter }) => {
 
   return (
     <div>
-      Seleziona una città
-      <select value={cityFilter} onChange={handleSelectChange}>
+      <select
+        aria-label="cityFilter"
+        value={cityFilter}
+        onChange={handleSelectChange}
+      >
         {data && data.map((city) => <Option key={city.comune} city={city} />)}
       </select>
     </div>
