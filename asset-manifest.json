@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.34de6062.chunk.css",
-    "main.js": "/static/js/main.a1b87fc9.chunk.js",
-    "main.js.map": "/static/js/main.a1b87fc9.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.92d4b870.js",
-    "runtime-main.js.map": "/static/js/runtime-main.92d4b870.js.map",
-    "static/js/2.1c57116f.chunk.js": "/static/js/2.1c57116f.chunk.js",
-    "static/js/2.1c57116f.chunk.js.map": "/static/js/2.1c57116f.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.77d6115e99c1f41f099a037dd4bf722e.js": "/precache-manifest.77d6115e99c1f41f099a037dd4bf722e.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.34de6062.chunk.css.map": "/static/css/main.34de6062.chunk.css.map",
-    "static/js/2.1c57116f.chunk.js.LICENSE.txt": "/static/js/2.1c57116f.chunk.js.LICENSE.txt"
+    "main.css": "/www.laspesasottocasa.it/static/css/main.34de6062.chunk.css",
+    "main.js": "/www.laspesasottocasa.it/static/js/main.7f7c723f.chunk.js",
+    "main.js.map": "/www.laspesasottocasa.it/static/js/main.7f7c723f.chunk.js.map",
+    "runtime-main.js": "/www.laspesasottocasa.it/static/js/runtime-main.4c75879c.js",
+    "runtime-main.js.map": "/www.laspesasottocasa.it/static/js/runtime-main.4c75879c.js.map",
+    "static/js/2.786466a4.chunk.js": "/www.laspesasottocasa.it/static/js/2.786466a4.chunk.js",
+    "static/js/2.786466a4.chunk.js.map": "/www.laspesasottocasa.it/static/js/2.786466a4.chunk.js.map",
+    "index.html": "/www.laspesasottocasa.it/index.html",
+    "precache-manifest.0ce45713410e38c595699e7ee00d149e.js": "/www.laspesasottocasa.it/precache-manifest.0ce45713410e38c595699e7ee00d149e.js",
+    "service-worker.js": "/www.laspesasottocasa.it/service-worker.js",
+    "static/css/main.34de6062.chunk.css.map": "/www.laspesasottocasa.it/static/css/main.34de6062.chunk.css.map",
+    "static/js/2.786466a4.chunk.js.LICENSE.txt": "/www.laspesasottocasa.it/static/js/2.786466a4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.92d4b870.js",
-    "static/js/2.1c57116f.chunk.js",
+    "static/js/runtime-main.4c75879c.js",
+    "static/js/2.786466a4.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.a1b87fc9.chunk.js"
+    "static/js/main.7f7c723f.chunk.js"
   ]
 }
