@@ -13,9 +13,10 @@ export default ({ shop }) => {
         {shop.urls ? <A href={shop.urls[0]}>{shop.name}</A> : shop.name}
       </Name>
       <div>{shop.address}</div>
+      <div>{shop.merce ? shop.merce.join(", ") : ""}</div>
+      <div>{shop.consegna}</div>
       <div>{shop.email}</div>
       <div>{shop.phones ? shop.phones.join(", ") : ""}</div>
-      <div>{shop.merce ? shop.merce.join(", ") : ""}</div>
       <hr />
     </div>
   );

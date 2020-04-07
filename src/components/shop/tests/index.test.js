@@ -1,5 +1,5 @@
 import React from "react";
-import { cleanup, render } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import Shop from "../";
 
 describe("Shop data is shows", () => {
@@ -10,8 +10,8 @@ describe("Shop data is shows", () => {
       urls: ["https://www.domain.it/"],
       phones: ["1234567"],
       address: "main street",
-      merce: ["ENOTECA"],
-      consegna: "",
+      merce: ["ENOTECA", "Vini"],
+      consegna: "delivery details",
     };
     const { getByText, querySelector } = render(<Shop shop={data} />);
 
@@ -21,6 +21,8 @@ describe("Shop data is shows", () => {
     expect(getByText(/foo/i).href).toBe("https://www.domain.it/");
     expect(getByText(/123456/i)).toBeTruthy();
     expect(getByText(/enoteca/i)).toBeTruthy();
+    expect(getByText(/vini/i)).toBeTruthy();
+    expect(getByText(/delivery details/i)).toBeTruthy();
   });
 
   test("Partial data is shown", () => {
